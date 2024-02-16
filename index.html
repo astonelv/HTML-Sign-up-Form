@@ -39,8 +39,8 @@
                 <label for="state">
                     State
                 </label> 
-                <select name="state">
-
+                <input name="state" list="state-list">
+                <datalist id="state-list">
                     <option value="AK">Alaska</option> 
                     <option value="AL">Alabama</option>
                     <option value="AZ">Arizona</option>
@@ -52,7 +52,8 @@
                     <option value="FL">Florida</option>
                     <option value="GA">Georgia</option>
                     <option value="HI">Hawaii</option>
-                    <option value="IA">Iowa</option>                        <option value="ID">Idaho</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IA">Iowa</option>                       
                     <option value="IL">Illinois</option>
                     <option value="IN">Indiana</option>
                     <option value="KY">Kentucky</option>
@@ -88,9 +89,7 @@
                     <option value="WA">Washington</option>
                     <option value="WI">Wisconsin</option>
                     <option value="WV">West Virginia</option>
-                    <option value="WY">Wyoming</option>
-                             
-                </select>
+                    <option value="WY">Wyoming</option>                            
                 <label for="zip">
                     Zip
                 </label>
@@ -105,13 +104,40 @@
                 <div>
                     <input type="radio" id="aruba" name="location" value="Aruba" checked>
                     <label for="aruba">Aruba</label>
+                </div>    
+                <div>
+                    <input type="radio" id="japan" name="location" value="Japan">
+                    <label for="japan">Japan</label>
+                </div>
+                <div>
+                    <input type="radio" id="reykjavik" name="location" value="Reykjavik">
+                    <label for="reykjavik">Reykjavik</label>
+                </div>
+                <div>
+                    <input type="radio" id="new-zealand" name="location" value="New Zealand">
+                    <label for="new-zealand">New Zealand</label>
+                </div>   
+            </fieldset>
+            <input type="color">
+            <fieldset>
+                <legend>Relax Luxuriously</legend>
+                <h3>
+                    Vacation Extras
+                </h3>
+                <div>
+                    <input type="checkbox" id="sauna" name="extras" value="Sauna" checked>
+                    <label for="sauna">Sauna</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="hot-tub" name="extras" value="Hot Tub">
+                    <label for="hot-tub">Hot Tub</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="massage" name="extras" value="Massage">
+                    <label for="massage">Massage</label>
                 </div>
             </fieldset>
-            <!-- TODO: Radio buttons for selecting preferred destination -->
-            <!-- TODO: Color input for selecting favorite color -->
-            <!-- TODO: Checkboxes for selecting extra add-ons -->
-            
-            <!-- TODO: Submit Button -->
+            <input type="submit" value="Enter the Contest">           
         </form>
     </main>
     <footer>
